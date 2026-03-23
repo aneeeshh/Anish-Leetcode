@@ -8,7 +8,7 @@ public:
             {'M',1000}
         };
         for(int i=n-1; i>=0; i--){
-            if(roman[s[i]] < roman[s[i+1]])
+            if(i < n-1  && roman[s[i]] < roman[s[i+1]])
             sum -= roman[s[i]];
             else
             sum += roman[s[i]];
